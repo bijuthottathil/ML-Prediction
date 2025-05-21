@@ -1,0 +1,13 @@
+# service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: ml-model-service
+spec:
+  selector:
+    app: ml-model
+  ports:
+    - protocol: TCP
+      port: 80 # External port
+      targetPort: 5000 # Internal container port
+  type: NodePort # Expose the service on a port on each node's IP

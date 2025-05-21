@@ -1,0 +1,8 @@
+# requirements.txt
+flask==2.0.3
+scikit-learn==1.0.2
+numpy==1.21.5
+pandas==1.3.5
+joblib==1.1.0
+gunicorn==20.1.0 # For production-ready web server
+werkzeug==2.0.3 # Pinned for compatibility with Flask 2.0.3
